@@ -49,7 +49,7 @@ Future<void> _showMyDialog(BuildContext context, List<Todo> todos) async {
   final TextEditingController subTitleController = TextEditingController();
   return showDialog<void>(
     context: context,
-    barrierDismissible: false, // user must tap button!
+    barrierDismissible: true, // user must tap button!
     builder: (BuildContext context) {
       return AlertDialog(
         title: const Text('AlertDialog Title'),
